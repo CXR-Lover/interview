@@ -1,3 +1,4 @@
+import java.sql.Time;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -37,8 +38,9 @@ class Test2 {
 
 public class VolatileNotAtomicDemo {
     public static void main(String[] args) {
+        long startTime = System.currentTimeMillis();
+        Test2 test2 = new Test2();
         for (int z = 0; z < 10; z++) {
-            Test2 test2 = new Test2();
             for (int i = 1; i <= 20; i++) {
                 new Thread(() -> {
                     for (int j = 0; j < 10000; j++) {
@@ -51,8 +53,9 @@ public class VolatileNotAtomicDemo {
                 Thread.yield();
             }
             System.out.println(Thread.currentThread().getName() + "线程  \t number = " + test2.number);
-            System.out.println(Thread.currentThread().getName() + "线程  \t number = " + test2.atomicInteger);
+            System.out.println(Thread.currentThread().getName() + "线程  \t atomicInteger = " + test2.atomicInteger);
         }
-
+        long endTime = System.currentTimeMillis();
+        System.out.println(endTime - startTime + "毫秒");
     }
 }

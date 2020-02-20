@@ -2,6 +2,7 @@ package com.hpb.study;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @Classname MybatisDemoApplication
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 
 @SpringBootApplication
+@ComponentScan("com.hpb.study")
 public class MybatisDemoApplication {
     public static void main(String[] args) {
         SpringApplication.run(MybatisDemoApplication.class);

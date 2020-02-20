@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CAS/CAS.iml" filepath="$PROJECT_DIR$/CAS/CAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IOStream/IOStream.iml" filepath="$PROJECT_DIR$/IOStream/IOStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JAVABase/JAVABase.iml" filepath="$PROJECT_DIR$/JAVABase/JAVABase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/interview.iml" filepath="$PROJECT_DIR$/interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" filepath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring4Demo/spring4Demo.iml" filepath="$PROJECT_DIR$/spring4Demo/spring4Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volatile/volatile.iml" filepath="$PROJECT_DIR$/volatile/volatile.iml" />
+    </modules>
+  </component>
+</project>

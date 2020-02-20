@@ -1,7 +1,6 @@
 import java.util.concurrent.TimeUnit;
 
 class Test {
-    //public int number = 0 ;
     public volatile int number = 0;
 
     public void plus() {
@@ -9,26 +8,27 @@ class Test {
     }
 }
 
+/**
+ * 验证volatile的可见性
+ * 代码说明： while代码块在main线程中一直循环监控number的值
+ */
 public class VolatileVisitableDemo {
-    public static void main(String[] args) {
-        Test t = new Test();
+    public static void main(String[] args) throws InterruptedException {
+        Test test = new Test();
+        System.out.println(Thread.currentThread().getName() + "\t 启动");
         new Thread(() -> {
-            System.out.println(Thread.currentThread().getName() + "\t Thread start");
             try {
-                TimeUnit.SECONDS.sleep(5);
+                TimeUnit.SECONDS.sleep(3);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            t.plus();
-            System.out.println(Thread.currentThread().getName() + "\t Thread end: value：" + t.number);
-        }, "T").start();
+            test.plus();
+        }, "线程1").start();
+        System.out.println(Thread.currentThread().getName() + "\t number =" + test.number);
 
-        while (t.number == 0) {
-            //为什么加上System.out.println 会导致不加volatile也可以是的number变量可见性？
-            //因为println里面有synchronized 关键字，这个同步会导致CPU分出时间去保证内存的可见性。所以。。。。。。。。
-            //System.out.println("123");
+        while (test.number == 0) {
+
         }
-
-        System.out.println(Thread.currentThread().getName() + " \t mission is over ,value=" + t.number);
+        System.out.println(Thread.currentThread().getName() + "\t number =" + test.number);
     }
 }
