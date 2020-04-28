@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview.iml" filepath="$PROJECT_DIR$/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" filepath="$PROJECT_DIR$/mybatisDemo/mybatisDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lock-demo/lock-demo.iml" filepath="$PROJECT_DIR$/lock-demo/lock-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring4Demo/spring4Demo.iml" filepath="$PROJECT_DIR$/spring4Demo/spring4Demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/volatile/volatile.iml" filepath="$PROJECT_DIR$/volatile/volatile.iml" />
     </modules>

@@ -18,7 +18,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="CAS" />
         <module name="list" />
-        <module name="mybatisDemo" />
+        <module name="lock-demo" />
         <module name="spring4Demo" />
         <module name="volatile" />
       </profile>
@@ -26,6 +26,7 @@
     <bytecodeTargetLevel>
       <module name="CAS" target="8" />
       <module name="list" target="8" />
+      <module name="lock-demo" target="1.5" />
       <module name="mybatisDemo" target="1.5" />
       <module name="spring4Demo" target="1.5" />
       <module name="volatile" target="8" />

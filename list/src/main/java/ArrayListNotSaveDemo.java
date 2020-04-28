@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 解决方法
  * 1、new Vector()
  * 2、Collections.synchronized(new ArrayList<>());
- * 3、CopyOnWriteArrayList ： 写时复制
+ * 3、CopyOnWriteArrayList ： 写时复制（ConcurrentHashMap）
  */
 public class ArrayListNotSaveDemo {
     public static void main(String[] args) {
