@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/IOStream/IOStream.iml" filepath="$PROJECT_DIR$/IOStream/IOStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/JAVABase/JAVABase.iml" filepath="$PROJECT_DIR$/JAVABase/JAVABase.iml" />
       <module fileurl="file://$PROJECT_DIR$/Singleton/Singleton.iml" filepath="$PROJECT_DIR$/Singleton/Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview.iml" filepath="$PROJECT_DIR$/interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
       <module fileurl="file://$PROJECT_DIR$/lock-demo/lock-demo.iml" filepath="$PROJECT_DIR$/lock-demo/lock-demo.iml" />
