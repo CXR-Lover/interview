@@ -16,6 +16,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Array" />
         <module name="CAS" />
         <module name="collection" />
         <module name="list" />
@@ -25,8 +26,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Array" target="1.5" />
       <module name="CAS" target="8" />
-      <module name="collection" target="8" />
+      <module name="collection" target="7" />
       <module name="list" target="8" />
       <module name="lock-demo" target="1.5" />
       <module name="spring4Demo" target="1.5" />
