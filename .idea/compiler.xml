@@ -30,7 +30,7 @@
       <module name="CAS" target="8" />
       <module name="collection" target="7" />
       <module name="list" target="8" />
-      <module name="lock-demo" target="1.5" />
+      <module name="lock-demo" target="8" />
       <module name="spring4Demo" target="1.5" />
       <module name="volatile" target="8" />
     </bytecodeTargetLevel>

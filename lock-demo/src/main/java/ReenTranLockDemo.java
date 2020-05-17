@@ -1,23 +1,45 @@
-/**
- * @Classname FairLockDemo
- * @Description TODO
- * @Date 2020/2/25 14:42
- * @Created by CXR
- */
+class Person implements Runnable {
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+    public synchronized void work() throws Exception {
+        System.out.println(Thread.currentThread().getName() + " work ");
+        run(Thread.currentThread().getId());
+    }
 
-/**
- * 可重入锁： new ReentranLock() 和 Synchronized
- * 他们本身就是
- */
-class Demo {
-    Lock lock = new ReentrantLock();
+    public synchronized void run(long id) throws Exception {
+        if (id != Thread.currentThread().getId()) {
+            throw new Exception("问题");
+        }
+        System.out.println(Thread.currentThread().getName() + " run");
+    }
+
+    @Override
+    public void run() {
+        try {
+            work();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
 
-public class ReenTranLockDemo {
-    public static void main(String[] args) {
 
+public class ReenTranLockDemo {
+
+    public static void main(String[] args) {
+        Person person = new Person();
+        new Thread(() -> {
+            try {
+                person.work();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }, "t1").start();
+        new Thread(() -> {
+            try {
+                person.work();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }, "t2").start();
     }
 }
