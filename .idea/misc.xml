@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/lock-demo/pom.xml" />
         <option value="$PROJECT_DIR$/collection/pom.xml" />
         <option value="$PROJECT_DIR$/Array/pom.xml" />
+        <option value="$PROJECT_DIR$/queue/pom.xml" />
       </list>
     </option>
   </component>
