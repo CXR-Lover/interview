@@ -6,10 +6,10 @@
       <module fileurl="file://$PROJECT_DIR$/CAS/CAS.iml" filepath="$PROJECT_DIR$/CAS/CAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/collection/collection.iml" filepath="$PROJECT_DIR$/collection/collection.iml" />
       <module fileurl="file://$PROJECT_DIR$/interview.iml" filepath="$PROJECT_DIR$/interview.iml" />
-      <module fileurl="file://$PROJECT_DIR$/list/list.iml" filepath="$PROJECT_DIR$/list/list.iml" />
       <module fileurl="file://$PROJECT_DIR$/lock-demo/lock-demo.iml" filepath="$PROJECT_DIR$/lock-demo/lock-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring4Demo/spring4Demo.iml" filepath="$PROJECT_DIR$/spring4Demo/spring4Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testProjectInstance/testProjectInstance.iml" filepath="$PROJECT_DIR$/testProjectInstance/testProjectInstance.iml" />
       <module fileurl="file://$PROJECT_DIR$/volatile/volatile.iml" filepath="$PROJECT_DIR$/volatile/volatile.iml" />
     </modules>
   </component>

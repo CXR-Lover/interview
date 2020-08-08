@@ -1,25 +1,25 @@
-import org.junit.Test;
-
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.Random;
 
 public class ArrayListTest {
-    @Test
-    public void Add() {
-        List list = new ArrayList();
-        list.add("123");
-        list.add("456");
-        list.add(1234);
-        list.add(4567);
-        list.add(new Integer(1));
-        list.add(new Integer(2));
-        list.add(new Integer[]{3});
 
-        Iterator iterator = list.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+    private static final int area = 1000;
 
+    public static String getAmount(BigDecimal b1, BigDecimal b2, BigDecimal b3) {
+
+        return null;
+    }
+
+    public static BigDecimal getRandomNumber(BigDecimal min, BigDecimal max) {
+
+        Random r = new Random();
+        return min.add(new BigDecimal(Math.random()).multiply(max));
+    }
+
+    public static void main(String[] args) {
+        BigDecimal min = new BigDecimal(20);
+        BigDecimal max = new BigDecimal(30);
+
+        System.out.println(getRandomNumber(min, max));
     }
 }

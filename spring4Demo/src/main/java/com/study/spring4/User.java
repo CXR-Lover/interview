@@ -8,6 +8,7 @@ package com.study.spring4;
  */
 public class User {
 
+
     private String name;
 
     public void setName2(String name) {
